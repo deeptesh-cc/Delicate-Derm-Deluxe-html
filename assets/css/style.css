@@ -24,7 +24,6 @@ body{
     font-family: var(--font-body);
     color: var(--color-text);
     font-size: 1.13rem;
-    font-weight: 500;
 }
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
@@ -211,15 +210,12 @@ ul{
 }
 .counter-circle p{
     font-size: 1.23rem;
+    line-height: 1.2;
     margin: 0.6rem 0 0;
     font-family: var(--font-title);
 }
-.counter-circle.light h4{
+.counter-circle.light h4, .counter-circle.light p{
     color: var(--color-white);
-}
-.counter-circle.light p{
-    color: var(--color-border);
-    line-height: 1.2;
 }
 .category-circle{
     display: block;
@@ -302,6 +298,7 @@ ul{
     letter-spacing: 0.15rem;
     color: var(--color-dark);
     margin-top: 0.5rem;
+    font-weight: 500;
 }
 .product-block .content-box p del{
     color: var(--color-text);
@@ -309,12 +306,97 @@ ul{
 .product-block .content-box {
     padding: 0.5rem 0 1.3rem;
 }
+.benefitsArea{
+    background: #FFFFEF;
+    background: radial-gradient(circle, rgba(255, 255, 239, 1) 0%, rgba(255, 255, 226, 1) 100%);
+}
+.benefit-block{
+    margin-bottom: 1.5rem;
+}
+.benefit-block:last-child{
+    margin-bottom: 0;
+}
+.benefit-block h3{
+    font-size: 1.85rem;
+}
+.benefit-block .number{
+    font-size: 3.88rem;
+    color: var(--color-border);
+    font-family: var(--font-title);
+}
+.benefitsArea .feat-img{
+    border-radius: 20rem;
+    overflow: hidden;
+}
+.benefitsArea .feat-img02 {
+    position: absolute;
+    right: -7rem;
+    bottom: 0;
+    max-width: 20.63rem;
+}
+.testimonialsArea{
+    background: #FFFFE2;
+    background: linear-gradient(180deg, rgba(255, 255, 226, 0) 0%, rgba(255, 255, 226, 1) 100%);
+}
+.testimonial-block .title{
+    margin: 0.5rem 0 0.3rem;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+.testimonial-block .testim-cont{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2.25rem;
+    color: var(--color-dark);
+}
+.testimonial-block .auth-area h5{
+    font-size: 1.31rem;
+    margin: 0;
+}
+.testimonial-block .auth-area span{
+    font-size: 1rem;
+}
+.testimonial-block img:nth-of-type(2){
+    width: 8.56rem;
+    margin-top: 1rem;
+}
+.accordion-item{
+    border: 0;
+}
+.accordion-button{
+    font-size: 1.63rem;
+    color: var(--color-dark) !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    box-shadow: none !important;
+    padding: 1.74rem 0;
+}
+.accordion-button::after{
+    background-image: url(../images/icons/arrow-right.svg) !important;
+}
+.accordion-button:not(.collapsed)::after{
+    transform: none !important;
+}
+.accordion-body{
+    padding: 1rem 0;
+}
 @media (min-width: 992px){
     .category-circle{
         margin: 0px -1.8rem;
     }
     .category-row-wrapper{
         padding: 0 1.8rem;
+    }
+    .benefit-block{
+        padding: 0 0.8rem;
+        margin-bottom: 3rem;
+    }
+    .testimonialsArea .counter-wrap .row>*{
+        margin: 0 -1.4rem;
+    }
+    .testimonialsArea .counter-wrap{
+        padding-right: 1.56rem;
     }
 }
 @media (min-width: 992px) and (max-width: 1199.98px){
@@ -429,5 +511,26 @@ ul{
     }
     .counter-circle{
         margin-bottom: -1.3rem;
+    }
+    .product-block .inner-box h3 {
+        font-size: 1.3rem;
+    }
+    .product-block .content-box img{
+        max-width: 75px;
+    }
+    .product-block .content-box span{
+        font-size: 0.8rem;
+    }
+    .product-block .image-box a img{
+        max-width: 17px;
+    }
+    .product-block .inner-box .image-box .sale-badge {
+        font-size: 0.75rem;
+    }
+    .testimonial-block .testim-cont{
+        margin-bottom: 1.45rem;
+    }
+    .testimonial-block img:nth-of-type(1){
+        max-width: 4.45rem;
     }
 }
